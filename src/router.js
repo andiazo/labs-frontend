@@ -3,6 +3,7 @@ import Router from 'vue-router';
 import SignUp from "./views/SignUp";
 import Login from "./views/Login";
 import Home from "./views/Home";
+import AddCourse from "./components/AddCourse";
 import AddRole from "./components/AddRole";
 import Courses from '@/views/Courses';
 import Roles from "@/components/Roles";
@@ -43,6 +44,11 @@ export default new Router({
           path: "roles",
           name: "roles",
           component: Roles
+        },
+        {
+          path: "profesor/crear-curso",
+          name: "create-course",
+          component: AddCourse
         }
       ]
     }

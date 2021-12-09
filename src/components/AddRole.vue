@@ -77,7 +77,8 @@
             }else if ( response.response.status === 400 ){
               alert( "¿Estás seguro de que aún no tienes ese rol asignado?" );
             }else{
-              alert( "No es posible conectar con el backend en este momento" );
+              alert( "No es posible conectar con el backend en este momento\n " );
+              
             }
           });
         event.preventDefault( );
